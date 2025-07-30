@@ -3,66 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy 1 Month, Laasya 💛</title>
+  <title>One Month Anniversary Dear Laasya 💛</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="background"></div>
 
-  <main class="container">
-    <h1>💛 One Month Together 💛</h1>
+  <div class="container">
+    <h1>💛 Happy 1 Month Anniversary Pookie 💛</h1>
     <p class="message">
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy 1 Month Anniversary Pookie! 💛</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="background"></div>
-
-  <main class="container">
-    <h1>💛 One Month Together Laasya!💛</h1>
-    <p class="message">
-    With you, every day feels golden. Here's to our first month — and many more to come. 🌟
+      May we live together for our entire lives, peacefully and lovingly.
     </p>
-    <button onclick="showSurprise()">Reveal the Magic ✨</button>
+    <button onclick="showSurprise()">Tap to Reveal the Magic ✨</button>
 
-    <section id="surprise" class="hidden">
-      <p class="love-note"> You are My Life, I pray to God that we are together forever. From the day I met you, my life has been soo much better. I Love you my dearest Laasya!</p>
+    <div id="surprise" class="hidden">
+      <p class="reveal-text"> You are My Life, I pray to God that we are together forever. From the day I met you, my life has been soo much better. I Love you my dearest Laasya!</p>
 
-      <div class="audio-icon" onclick="toggleAudio()">
-        🎵
-      </div>
-      <audio id="song" preload="auto">
+      <!-- 🎵 Audio Icon -->
+      <div class="audio-icon" onclick="toggleAudio()">🎵</div>
+
+      <!-- Hidden audio element -->
+      <audio id="song">
         <source src="blue.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
       </audio>
-    </section>
-  </main>
+    </div>
+  </div>
 
+  <!-- Confetti canvas -->
   <canvas id="confettiCanvas"></canvas>
-  <script src="script.js"></script>
-</body>
-</html>
 
-    </p>
-    <button onclick="showSurprise()">Reveal the Magic ✨</button>
-
-    <section id="surprise" class="hidden">
-      <p class="love-note">You're my peace, my person, my always.</p>
-
-      <div class="audio-icon" onclick="toggleAudio()">
-        🎵
-      </div>
-      <audio id="song" preload="auto">
-        <source src="blue.mp3" type="audio/mpeg" />
-      </audio>
-    </section>
-  </main>
-
-  <canvas id="confettiCanvas"></canvas>
+  <!-- JS file -->
   <script src="script.js"></script>
 </body>
 </html>
