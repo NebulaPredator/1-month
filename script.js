@@ -1,8 +1,26 @@
 function showSurprise() {
-  document.getElementById('surprise').classList.remove('hidden');
+  const surprise = document.getElementById('surprise');
+  const song = document.getElementById('song');
+  surprise.classList.remove('hidden');
   startConfetti();
+
+  // Auto-play audio on reveal
+  song.play().catch(err => {
+    console.log('Autoplay blocked. Tap the music icon to play.');
+  });
 }
 
+// Toggle audio on icon click
+function toggleAudio() {
+  const song = document.getElementById('song');
+  if (song.paused) {
+    song.play();
+  } else {
+    song.pause();
+  }
+}
+
+// 🎊 Confetti Setup
 const canvas = document.getElementById('confettiCanvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
