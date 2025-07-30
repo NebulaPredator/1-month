@@ -110,3 +110,26 @@ audio {
     font-size: 1rem;
   }
 }
+
+.audio-icon {
+  font-size: 32px;
+  color: #ffd700;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.audio-icon:hover {
+  transform: scale(1.2);
+}
+
+audio {
+  display: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
